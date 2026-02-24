@@ -78,14 +78,13 @@ li {
   background-color: white;
   color: #333;
   margin: 10px 0;
-  padding: 15px;
+  padding: 12px 15px;
   font-size: 18px;
   display: flex;
   align-items: center;
   gap: 12px;
-  border-radius: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 li:hover {
@@ -101,7 +100,13 @@ li input[type="checkbox"] {
 
 li span {
   flex: 1;
+  min-width: 0;
   word-break: break-word;
+}
+
+li button {
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .completed {
@@ -128,12 +133,18 @@ li button:hover {
   font-size: 14px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .input-container {
     flex-direction: column;
+    width: 90%;
   }
 
+  #todoInput,
   button {
     width: 100%;
+  }
+
+  ul {
+    width: 90%;
   }
 }
