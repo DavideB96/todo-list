@@ -105,6 +105,7 @@ li span {
 }
 
 li button {
+  width: auto;
   flex-shrink: 0;
   white-space: nowrap;
 }
@@ -139,8 +140,11 @@ li button:hover {
     width: 90%;
   }
 
-  #todoInput,
-  button {
+  #todoInput {
+    width: 100%;
+  }
+
+  .input-container>button {
     width: 100%;
   }
 
