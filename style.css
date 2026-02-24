@@ -78,7 +78,7 @@ li {
   background-color: white;
   color: #333;
   margin: 10px 0;
-  padding: 12px 22px;
+  padding: 16px 22px;
   font-size: 18px;
   display: flex;
   flex-wrap: wrap;
@@ -148,5 +148,6 @@ li button:hover {
   ul {
     width: 90%;
   }
+
 
 
