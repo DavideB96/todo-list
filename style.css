@@ -78,7 +78,7 @@ li {
   background-color: white;
   color: #333;
   margin: 10px 0;
-  padding: 12px 15px;
+  padding: 12px 18px;
   font-size: 18px;
   display: flex;
   flex-wrap: wrap;
@@ -99,11 +99,11 @@ li input[type="checkbox"] {
   cursor: pointer;
 }
 
- li span {
-    flex: 1 1 200px;  
-    word-break: normal; 
-    overflow-wrap: anywhere; 
-  }
+li span {
+  flex: 1 1 200px;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
 
 .completed {
   text-decoration: line-through;
@@ -135,20 +135,19 @@ li button:hover {
   .input-container {
     flex-direction: column;
     width: 90%;
+    margin: 0 auto;
   }
 
   #todoInput {
     width: 100%;
   }
 
-  .input-container > button {
+  .input-container>button {
     width: 100%;
   }
 
   ul {
     width: 90%;
+    margin: 0 auto;
   }
-
-
-
-
+}
