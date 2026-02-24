@@ -81,6 +81,7 @@ li {
   padding: 12px 15px;
   font-size: 18px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 12px;
   border-radius: 12px;
@@ -98,17 +99,11 @@ li input[type="checkbox"] {
   cursor: pointer;
 }
 
-li span {
-  flex: 1;
-  min-width: 0;
-  word-break: break-word;
-}
-
-li button {
-  width: auto;
-  flex-shrink: 0;
-  white-space: nowrap;
-}
+ li span {
+    flex: 1 1 200px;  
+    word-break: normal; 
+    overflow-wrap: anywhere; 
+  }
 
 .completed {
   text-decoration: line-through;
@@ -121,6 +116,8 @@ li button {
   border-radius: 10px;
   font-size: 14px;
   white-space: nowrap;
+  width: 100%;
+  flex-shrink: 0;
 }
 
 li button:hover {
@@ -144,11 +141,10 @@ li button:hover {
     width: 100%;
   }
 
-  .input-container>button {
+  .input-container > button {
     width: 100%;
   }
 
   ul {
     width: 90%;
   }
-}
